@@ -1,0 +1,30 @@
+/* src/components/style/Hero.css */
+.hero-gradient {
+  background: linear-gradient(
+    135deg,
+    #8a30ad,   /* deep purple */
+    #c020a3,   /* rich magenta */
+    #6a1fb5,   /* midnight violet */
+    #9823c6,   /* plum */
+    #19341e    /* black cherry */
+  );
+  background-size: 400% 400%;
+  animation: gradientFlow 20s ease infinite;
+  color: #f8f9fa; /* light text for contrast */
+}
+#hero img {
+  margin-left: 4rem;
+}
+
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

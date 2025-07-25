@@ -1,0 +1,81 @@
+/* Section Background */
+#about {
+  background: linear-gradient(135deg, #f3ecff, #e0c3fc); /* soft violet gradient */
+  padding: 4rem 0;
+}
+
+/* Section Title */
+.section-title h2 {
+  font-weight: 800;
+  color: #6a1b9a;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.section-title p.lead {
+  color: #333;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+/* Glassmorphism Card - Personal Info and Skills */
+.card.glass-pink {
+  background: rgba(255, 192, 255, 0.25); /* soft pink-violet */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(186, 85, 211, 0.3); /* violet-pink glow */
+  border: 1px solid rgba(186, 85, 211, 0.2);
+}
+
+/* Card Item Styling */
+.card .list-group-item {
+  background-color: rgba(255, 192, 255, 0.15);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #4a004a;
+  padding: 0.85rem 1rem;
+  border: none;
+}
+
+/* Purple Title */
+.text-purple {
+  color: #6a1b9a;
+}
+
+/* Skill Badge */
+.skill-badge {
+  background: rgba(76, 34, 41, 0.15);
+  color: #2e003e;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 20px rgba(255, 192, 255, 0.1);
+}
+
+.skill-badge:hover {
+  transform: scale(1.05);
+  background: rgba(255, 192, 255, 0.25);
+}
+
+/* Button Style */
+.btn.btn-blue {
+  background: rgba(47, 18, 145, 0.2); /* blur-like blue */
+  color: white;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 123, 255, 0.2);
+  transition: background 0.3s ease, border 0.3s ease;
+}
+
+.btn.btn-blue:hover {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Hover Scale */
+.hover-scale:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
+}
