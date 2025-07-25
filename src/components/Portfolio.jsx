@@ -1,64 +1,67 @@
-// src/components/Portfolio.jsx
 import React from 'react';
+import '../style/Portfolio.css';
 
 const portfolioItems = [
   {
     id: 1,
-    title: 'Hackathon Tracker',
-    image: '/assets/hackathon.jpg',
-    description: 'A platform to discover and manage hackathons.',
-    link: 'https://example.com/hackathon'
+    title: 'Management System',
+    description: 'A platform to manage people efficiently.',
+    link: 'https://github.com/Sivadharaneesh/Management-system'
   },
   {
     id: 2,
-    title: 'Weather App',
-    image: '/assets/weather.jpg',
-    description: 'A weather forecasting app using OpenWeather API.',
-    link: 'https://example.com/weather'
+    title: 'Dynamic Route Optimization',
+    description: 'Pathfinding visualization platform simulating intelligent urban navigation.',
+    link: 'https://github.com/sanjjiiev/Dynamic-Route-Optimization-System'
   },
   {
     id: 3,
-    title: 'Portfolio Website',
-    image: '/assets/portfolio.jpg',
-    description: 'My personal portfolio built with React and Bootstrap.',
-    link: 'https://example.com/portfolio'
+    title: 'E-commerce Website',
+    description: 'A full-fledged online shopping platform with cart and purchase flow.',
+    link: 'https://github.com/sanjjiiev/E-commerce-Website'
+  },
+  {
+    id: 4,
+    title: 'Precision-Line-Guided-Autonomous-Robot',
+    description: 'Precision-Line-Guided-Autonomous-Robot with c++.',
+    link: 'https://github.com/sanjjiiev/Precision-Line-Guided-Autonomous-Robot'
+  },
+  {
+    id: 5,
+    title: 'Internships',
+    description: 'A one month internship in shlok informations on webdevelopment and UI design ',
+    link: 'https://github.com/Sivadharaneesh/shlokInternship/blob/main/SHLOK_INTERNSHIP.pdf'
   }
 ];
 
 const Portfolio = ({ darkMode }) => {
   return (
-    <section id="portfolio" className={`py-5 ${darkMode ? 'bg-dark text-light' : 'bg-light text-dark'}`}>
+    <section id="portfolio" className="colorful-gradient py-5 text-white">
       <div className="container">
         <div className="section-title text-center mb-5" data-aos="fade-up">
           <h2>Projects</h2>
-          <p>Here are some of the projects I've worked on recently.</p>
+          <p id="a">Here are some of the projects I've worked on recently.</p>
         </div>
 
         <div className="row">
           {portfolioItems.map((item) => (
-            <div
-              className="col-md-6 col-lg-4 mb-4"
-              key={item.id}
-              data-aos="zoom-in"
-              data-aos-delay={item.id * 100}
-            >
-              <div className={`card h-100 shadow-sm ${darkMode ? 'bg-secondary text-light' : ''}`}>
-                <img
-                  src={item.image}
-                  className="card-img-top"
-                  alt={item.title}
-                />
-                <div className="card-body d-flex flex-column">
-                  <h5 className="card-title">{item.title}</h5>
-                  <p className="card-text flex-grow-1">{item.description}</p>
-                  <a
-                    href={item.link}
-                    className="btn btn-primary mt-auto"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Project
-                  </a>
+            <div className="col-md-6 col-lg-4 mb-4" key={item.id} data-aos="flip-left">
+              <div className="flip-card glass-card">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                    <h4>{item.title}</h4>
+                  </div>
+                  <div className="flip-card-back">
+                    <p>{item.description}</p>
+                    <a
+                      href={item.link}
+                      className="btn btn-light mt-3"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View 
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

@@ -1,0 +1,91 @@
+/* src/style/Portfolio.css */
+
+/* Light pastel animated background */
+.colorful-gradient {
+  background: linear-gradient(-45deg, #fdfbfb, #ebedee, #e6f0ff, #fff6f6);
+  background-size: 400% 400%;
+  animation: pastelFlow 15s ease infinite;
+  color: #333;
+}
+#a{
+    color:rgb(27, 43, 53);
+}
+
+@keyframes pastelFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Flip card setup */
+.flip-card {
+  perspective: 1000px;
+  height: 250px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front of the card */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  backface-visibility: hidden;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  color: #222;
+}
+
+/* Light pastel gradient front */
+.flip-card-front {
+  background: linear-gradient(135deg, #f0f4ff, #ffffff);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Flip side with soft pink-yellow tone */
+.flip-card-back {
+  background: linear-gradient(135deg, #fff0f0, #fffbe6);
+  transform: rotateY(180deg);
+  flex-direction: column;
+}
+
+/* Glassy effect card border */
+.glass-card {
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(200, 200, 200, 0.3);
+}
+
+/* Light button */
+.btn-light {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+  background-color: #f0f0f0;
+}

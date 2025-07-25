@@ -1,0 +1,6 @@
+/* src/components/Navbar.css */
+
+.custom-dark-navbar {
+  background-color: #343a40 !important; /* Dark gray */
+  transition: background-color 0.3s ease;
+}

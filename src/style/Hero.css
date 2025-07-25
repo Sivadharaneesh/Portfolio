@@ -15,6 +15,13 @@
 #hero img {
   margin-left: 4rem;
 }
+#hero a i {
+  transition: color 0.3s ease;
+}
+
+#hero a:hover i {
+  color: #ffc107; /* yellowish glow on hover */
+}
 
 
 @keyframes gradientFlow {

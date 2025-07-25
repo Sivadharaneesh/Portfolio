@@ -22,8 +22,8 @@ const About = () => {
               <ul className="list-group list-group-flush">
                 <li className="list-group-item glass-item"><strong>Name:</strong> Siva Dharaneesh A R</li>
                 <li className="list-group-item glass-item"><strong>Education:</strong> B.Tech in Computer Science</li>
-                <li className="list-group-item glass-item"><strong>Passions:</strong> Web Development, AI Integration, Hackathons</li>
-                <li className="list-group-item glass-item"><strong>Location:</strong> India</li>
+                <li className="list-group-item glass-item"><strong>Passions:</strong> Web Development, ML and AI Integration</li>
+                <li className="list-group-item glass-item"><strong>Location:</strong> Coimbatore,India</li>
               </ul>
             </div>
           </div>

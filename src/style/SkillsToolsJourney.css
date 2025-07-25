@@ -1,0 +1,78 @@
+/* src/components/SkillsJourney.css */
+.skills-journey-section {
+  background-color: #f5f5fa;
+  color: #333;
+}
+
+.skills-journey-section .section-title h2 {
+  font-weight: bold;
+  color: #7f00ff;
+}
+
+.skills-journey-section .timeline {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-journey-section .timeline li {
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.skills-journey-section .timeline li::before {
+  content: '✔';
+  color: #673896;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+.skills-journey-section .timeline-content h5 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* Flip Card */
+.skills-journey-section .flip-card {
+  background-color: transparent;
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  margin: 0 auto;
+  perspective: 1000px;
+}
+
+.skills-journey-section .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.skills-journey-section .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.skills-journey-section .flip-card-front,
+.skills-journey-section .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+}
+
+.skills-journey-section .flip-card-front {
+  background: linear-gradient(135deg, #7198bb, #764a82);
+}
+
+.skills-journey-section .flip-card-back {
+  background: linear-gradient(135deg, #cab5b5, #acc5dd);
+  transform: rotateY(180deg);
+}
