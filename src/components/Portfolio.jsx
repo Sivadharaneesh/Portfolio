@@ -28,6 +28,12 @@ const portfolioItems = [
   },
   {
     id: 5,
+    title: 'CampusConnect',
+    description: 'A Reddit-style platform for students to team up for projects and events with React,Node.js,Express,MongoDb.',
+    link: 'https://github.com/Sivadharaneesh/Campus-Connect'
+  },
+  {
+    id: 6,
     title: 'Internships',
     description: 'A one month internship in shlok informations on webdevelopment and UI design ',
     link: 'https://github.com/Sivadharaneesh/shlokInternship/blob/main/SHLOK_INTERNSHIP.pdf'

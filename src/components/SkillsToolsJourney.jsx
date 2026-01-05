@@ -40,13 +40,13 @@ const SkillsJourney = () => {
           <div className="flip-card mx-auto">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <h5>CampusConnect <hr />
-                <p>A Collaboration Platform</p></h5>
+                <h5>FoodRedistribution Platform <hr />
+                <p>A Coordination Platform</p></h5>
                 
               </div>
               <div className="flip-card-back">
-                <h5>CampusConnect</h5>
-                <p>A Reddit-style platform for students to team up for projects and events.</p>
+                <h5>FoodRedistribution Platform</h5>
+                <p>A platform that reduces food waste by safely redistributing surplus food from various places to NGOs in need through intelligent matching and real-time coordination.</p>
                 <p><strong>Stack:</strong> React, Node.js, Express, MongoDB</p>
               </div>
             </div>

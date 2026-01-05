@@ -54,7 +54,7 @@ const Hero = () => {
         </div>
 
         <img
-          src={process.env.PUBLIC_URL + "/assets/profile.png"}
+          src={process.env.PUBLIC_URL + "/assets/profile.jpg"}
           alt="Profile"
           width="350"
           className="rounded mb-4"
